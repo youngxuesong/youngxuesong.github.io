@@ -1,0 +1,19 @@
+/*页脚显示网站运行时间*/
+div#runtime {
+    width: fit-content;
+    color: #fff;
+    display: flex;
+    margin: auto;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+}
+
+[data-theme="dark"] div#runtime {
+    color: #28b4c8;
+    box-shadow: 0 0 5px rgba(28, 69, 218, 0.71);
+}
+#runtime:hover {
+    background: #f0f0f0;
+    color: #000;
+}
