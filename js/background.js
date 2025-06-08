@@ -232,7 +232,7 @@
 
     /*页脚显示网站运行时间*/
 //此处的时间改为自己的博客运行时间
-const CREATE_TIME = new Date('2020-01-01T00:00:00').getTime();  //使用ISO 8601日期格式，兼容所有浏览器
+const CREATE_TIME = new Date('2025-06-08T00:00:00').getTime();  //使用ISO 8601日期格式，兼容所有浏览器
 const TIME_UNITS = [
     { value: 31536000000, label: ' 年' },  // 年（毫秒）
     { value: 86400000, label: ' 天' },    // 天
