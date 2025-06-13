@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo插件使用指南</title>
+      <link href="/posts/560d8f5/"/>
+      <url>/posts/560d8f5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo插件使用指南"><a href="#Hexo插件使用指南" class="headerlink" title="Hexo插件使用指南"></a>Hexo插件使用指南</h1><p>Hexo是一个强大的博客框架，通过使用各种插件可以大大增强博客的功能。本文将介绍一些常用的Hexo插件及其使用方法。</p><h2 id="1-图片处理插件"><a href="#1-图片处理插件" class="headerlink" title="1. 图片处理插件"></a>1. 图片处理插件</h2><h3 id="hexo-asset-img"><a href="#hexo-asset-img" class="headerlink" title="hexo-asset-img"></a>hexo-asset-img</h3><p>这个插件可以将markdown中的图片路径转换为asset_img语法，使得图片在Typora和Hexo中都能正常显示。</p><p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-img --save</span><br></pre></td></tr></table></figure></p><h2 id="2-标签外挂插件"><a href="#2-标签外挂插件" class="headerlink" title="2. 标签外挂插件"></a>2. 标签外挂插件</h2><h3 id="hexo-butterfly-tag-plugins-plus"><a href="#hexo-butterfly-tag-plugins-plus" class="headerlink" title="hexo-butterfly-tag-plugins-plus"></a>hexo-butterfly-tag-plugins-plus</h3><p>这是一个功能强大的标签外挂插件，支持多种自定义标签，可以创建更丰富的文章内容。</p><p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-tag-plugins-plus --save</span><br></pre></td></tr></table></figure></p><p>使用示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note primary %&#125;</span><br><span class="line">这是一条提示信息</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></p><h2 id="3-评论系统插件"><a href="#3-评论系统插件" class="headerlink" title="3. 评论系统插件"></a>3. 评论系统插件</h2><h3 id="Giscus"><a href="#Giscus" class="headerlink" title="Giscus"></a>Giscus</h3><p>Giscus是一个基于GitHub Discussions的评论系统，可以轻松集成到Hexo博客中。</p><p>配置步骤：</p><ol><li>在GitHub上创建一个新的公开仓库</li><li>在仓库设置中启用Discussions功能</li><li>安装Giscus GitHub App</li><li>在博客配置文件中添加相关配置</li></ol><h2 id="4-搜索插件"><a href="#4-搜索插件" class="headerlink" title="4. 搜索插件"></a>4. 搜索插件</h2><h3 id="hexo-generator-search"><a href="#hexo-generator-search" class="headerlink" title="hexo-generator-search"></a>hexo-generator-search</h3><p>这个插件可以为博客添加搜索功能。</p><p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure></p><h2 id="5-文章字数统计插件"><a href="#5-文章字数统计插件" class="headerlink" title="5. 文章字数统计插件"></a>5. 文章字数统计插件</h2><h3 id="hexo-wordcount"><a href="#hexo-wordcount" class="headerlink" title="hexo-wordcount"></a>hexo-wordcount</h3><p>这个插件可以统计文章的字数、阅读时间等信息。</p><p>安装方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上介绍的插件只是Hexo生态中的一小部分。通过合理使用这些插件，可以让你的博客功能更加丰富，用户体验更好。在使用插件时，建议：</p><ol><li>仔细阅读插件的文档</li><li>注意插件之间的兼容性</li><li>定期更新插件以获取新功能和bug修复</li><li>不要安装过多插件，以免影响博客性能</li></ol><p>希望这篇文章对你有所帮助！如果你有任何问题，欢迎在评论区留言讨论。 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客教程 </category>
+          
+          <category> 博客搭建 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/4a17b156/"/>
+      <url>/posts/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
