@@ -1,0 +1,120 @@
+/*侧边栏标签美化*/
+#aside-content .card-tag-cloud a {
+    font-size: 0.3rem;
+    border-radius: 6px;
+    border-style: dashed;
+    border-width: 1px; 
+    margin: 3px; 
+  }
+
+  
+  /* 标签页加新样式 */
+#aside-content .card-tag-cloud a {
+    border: 1px solid;
+    line-height: 1.5;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 0 5px;
+}
+
+.tag-cloud-list a {
+    border: 1px solid;
+    line-height: 1.5;
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+
+/*文章分页卡片美化*/
+.relatedPosts > .relatedPosts-list > div {
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 1px;
+    margin: 1px;
+  }
+  .relatedPosts > .relatedPosts-list > a {
+      margin: 3px;
+      height: 200px;
+      border-radius: 20px;
+  }
+/*文章相关推荐卡片美化*/
+.relatedPosts > .relatedPosts-list > div {
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 1px;
+    margin: 1px;
+  }
+
+  
+  /* 文章目录 */
+ #aside-content #card-toc .toc-content {
+    margin: 10px -18px;
+  }
+   #aside-content #card-toc .toc-content .toc-link.active {
+    line-height: 1.2;
+    border-radius: 12px;
+    border-left-color: var(--heo-hovertext);
+    background-color: var(--heo-card-bg);
+    color: var(--heo-lighttext);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  [data-theme=dark].toc .toc-item.active .toc-link .toc-text {
+    color: var(--heo-white);
+  }
+  #aside-content #card-toc .toc-content .toc-item.active .toc-link {
+    opacity: 1;
+    border-radius: 8px;
+  }
+  #aside-content #card-toc .toc-content .toc-link {
+    line-height: 1.2;
+    padding: 8px;
+    border-left: 0px solid transparent;
+    border-radius: 12px;
+    color: var(--heo-secondtext);
+    cursor: default;
+  }
+  #aside-content #card-toc .toc-content .toc-link:not(.active) span {
+    opacity: 0.6;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: 0.3s;
+  }
+  #aside-content #card-toc:hover .toc-content .toc-link:not(.active) span {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  #aside-content #card-toc .toc-content .toc-link:not(.active) span:hover {
+    color: var(--heo-lighttext);
+  }
+
+  
+  /*页脚透明化*/
+#footer, #footer:before {
+    background: transparent!important;
+}
+#footer-wrap,
+#footer-wrap a {
+  color: #111;
+  -webkit-transition: unset;
+  -moz-transition: unset;
+  -o-transition: unset;
+  -ms-transition: unset;
+  transition: unset;
+}
+[data-theme='dark'] #footer-wrap,
+[data-theme='dark'] #footer-wrap a {
+  color: var(--light-grey);
+}
+/* 文章顶图透明化 */
+#page-header {
+    background: rgba(0,0,0,.5) !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
