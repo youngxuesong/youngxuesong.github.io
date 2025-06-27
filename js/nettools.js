@@ -332,12 +332,12 @@ function addInteractionEffects() {
   // 为表格行添加悬停效果
   document.querySelectorAll('.ip-table tr').forEach(row => {
     row.addEventListener('mouseenter', () => {
-      row.style.backgroundColor = '#f5f9ff';
+      row.style.backgroundColor = '#f0f5ff';
     });
     row.addEventListener('mouseleave', () => {
       // 恢复原来的背景色
       if (row.classList.contains('even')) {
-        row.style.backgroundColor = '#f9f9f9';
+        row.style.backgroundColor = '#f8fafc';
       } else {
         row.style.backgroundColor = '';
       }
@@ -511,4 +511,4 @@ function updatePingStats(final = false) {
       document.getElementById('ping-stats').style.display = 'grid';
     }
   }
-} 
+}
