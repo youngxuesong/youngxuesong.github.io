@@ -1,0 +1,196 @@
+/* 自定义CSS - 减小页面宽度 */
+.layout {
+  max-width: 1000px; /* 从默认的1200px减小到1000px */
+}
+
+@media (min-width: 2000px) {
+  .layout {
+    max-width: 55%; /* 从默认的70%减小到55% */
+  }
+}
+
+/* 隐藏侧边栏时的宽度也相应调整 */
+.layout.hide-aside {
+  max-width: 900px;
+}
+
+@media (min-width: 2000px) {
+  .layout.hide-aside {
+    max-width: 1100px;
+  }
+}
+
+/* 黑色背景主题 - 参考截图风格 */
+
+/* 全局背景设置 */
+body {
+  background-color: #000 !important;
+  background-image: url('https://cdn.jsdelivr.net/gh/DIYgod/hexo-theme-sagiri/source/images/starry.png') !important;
+  color: #f1f1f1 !important;
+}
+
+/* 导航栏样式 */
+#nav {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+#nav a, #site-name, .site-page, #menus .menus_items .menus_item a {
+  color: #fff !important;
+}
+
+#nav #site-name:hover, #nav .site-page:hover {
+  color: #3498db !important;
+}
+
+/* 内容区域布局 */
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 卡片样式 */
+.recent-post-item, .card-widget, #post, .post-content-inner {
+  background-color: rgba(30, 30, 40, 0.8) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  overflow: hidden;
+  margin-bottom: 20px !important;
+}
+
+.recent-post-item:hover, .card-widget:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* 文章标题样式 */
+.article-title, .article-sort-title, h1, h2, h3, h4, h5, h6 {
+  color: #fff !important;
+}
+
+.article-title:hover {
+  color: #3498db !important;
+}
+
+/* 卡片内部间距 */
+.card-widget {
+  padding: 1rem !important;
+}
+
+.recent-post-info {
+  padding: 1.5rem !important;
+}
+
+/* 首页文章特效 */
+.recent-post-item .post_cover img {
+  transition: transform 0.6s ease !important;
+}
+
+.recent-post-item:hover .post_cover img {
+  transform: scale(1.05) !important;
+}
+
+/* 文章元信息 */
+.article-meta-wrap, .post-meta-date {
+  color: #aaa !important;
+}
+
+/* 链接颜色 */
+a {
+  color: #3498db !important;
+}
+
+a:hover {
+  color: #2980b9 !important;
+}
+
+/* 侧边栏样式 */
+#aside-content .card-info {
+  background: linear-gradient(to bottom, #1a237e, #000046) !important;
+}
+
+.aside-list-item img {
+  border-radius: 8px !important;
+}
+
+/* 页脚样式 */
+#footer {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #fff !important;
+}
+
+#footer a {
+  color: #3498db !important;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 30, 40, 0.8);
+}
+
+/* Hello World大标题样式 */
+.home-header {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.home-header h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #2980b9, #3498db, #6dd5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* 个人资料卡片样式 */
+.card-info-avatar img {
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.card-info-social-icons a {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.card-info-social-icons a:hover {
+  color: #fff !important;
+  background-color: #3498db !important;
+}
+
+/* 代码块样式 */
+figure.highlight {
+  background: #1e1e2e !important;
+}
+
+pre code {
+  color: #f8f8f2 !important;
+}
+
+/* 标签、分类等页面样式 */
+.tag-cloud a, .category-lists a {
+  background: rgba(30, 30, 40, 0.8) !important;
+  color: #f1f1f1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.tag-cloud a:hover, .category-lists a:hover {
+  color: #fff !important;
+  background: #3498db !important;
+} 
