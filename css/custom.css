@@ -1,0 +1,25 @@
+/* 不蒜子访客统计样式 */
+.footer-statistics {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.footer-statistics i {
+  margin-right: 4px;
+  color: #49b1f5;
+}
+
+.site-pv, .site-uv {
+  margin: 0 4px;
+  padding: 2px 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-separator {
+  margin: 0 8px;
+} 
