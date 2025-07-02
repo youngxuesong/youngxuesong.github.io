@@ -9,6 +9,14 @@ window.addEventListener("load", () => {
     bodyStyle.overflow = "hidden";
     anzhiyu.animateIn($searchMask, "to_show 0.5s");
     anzhiyu.animateIn(document.querySelector("#local-search .search-dialog"), "titleScale 0.5s");
+    
+    // 适配移动设备
+    if (window.innerWidth <= 768) {
+      document.querySelector("#local-search .search-dialog").style.top = "0";
+      document.querySelector("#local-search .search-dialog").style.left = "0";
+      document.querySelector("#local-search .search-dialog").style.width = "100%";
+    }
+    
     setTimeout(() => {
       document.querySelector("#local-search-input input").focus();
     }, 100);
@@ -31,6 +39,15 @@ window.addEventListener("load", () => {
     bodyStyle.overflow = "";
     anzhiyu.animateOut(document.querySelector("#local-search .search-dialog"), "search_close .5s");
     anzhiyu.animateOut($searchMask, "to_hide 0.5s");
+    
+    // 重置搜索框样式
+    const searchDialog = document.querySelector("#local-search .search-dialog");
+    if (searchDialog) {
+      setTimeout(() => {
+        // 恢复默认样式
+        searchDialog.style.cssText = '';
+      }, 500);
+    }
   };
 
   const searchClickFn = () => {
@@ -190,12 +207,8 @@ window.addEventListener("load", () => {
 
               str += '<div class="local-search__hit-item">';
               if (oneImage) {
-                str += `<div class="search-left"><img src=${oneImage} alt=${dataTitle} data-fancybox='gallery'>`;
-              } else {
-                str += '<div class="search-left" style="width:0">';
+                str += `<div class="search-left"><img src=${oneImage} alt="${dataTitle}" data-fancybox='gallery'></div>`;
               }
-
-              str += "</div>";
 
               if (oneImage) {
                 str +=
@@ -206,7 +219,7 @@ window.addEventListener("load", () => {
                   "</a>";
               } else {
                 str +=
-                  '<div class="search-right" style="width: 100%"><a href="' +
+                  '<div class="search-right"><a href="' +
                   dataUrl +
                   '" class="search-result-title">' +
                   dataTitle +
@@ -225,18 +238,27 @@ window.addEventListener("load", () => {
                   post +
                   "</p>";
               }
-              if (dataTags.length) {
+              if (dataTags && dataTags.length) {
                 str += '<div class="search-result-tags">';
 
-                for (let i = 0; i < dataTags.length; i++) {
-                  const element = dataTags[i].trim();
+                // 限制显示的标签数量，避免布局错乱
+                const maxTagsToShow = 4;
+                const tagsToShow = dataTags.slice(0, maxTagsToShow);
+                
+                for (let i = 0; i < tagsToShow.length; i++) {
+                  const element = tagsToShow[i].trim();
+                  if (element) {
+                    str +=
+                      '<a class="tag-list" href="/tags/' +
+                      element +
+                      '/" data-pjax-state="" one-link-mark="yes">#' +
+                      element +
+                      "</a>";
+                  }
+                }
 
-                  str +=
-                    '<a class="tag-list" href="/tags/' +
-                    element +
-                    '/" data-pjax-state="" one-link-mark="yes">#' +
-                    element +
-                    "</a>";
+                if (dataTags.length > maxTagsToShow) {
+                  str += '<span>...</span>';
                 }
 
                 str += "</div>";
